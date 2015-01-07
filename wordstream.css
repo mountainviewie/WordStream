@@ -1,0 +1,141 @@
+/** During the course of coding this page, I learned a lot about how to properly use divs and boxes. You'll note that parts of the page will be boxed incorrectly while others are more towards best practice. **/
+
+
+/**  Header **/
+
+#header-navbar {
+	text-align: right;
+	margin:0px;
+}
+#navbar {
+	background:lightgrey;
+	border:solid 1px;
+	border-color:grey;
+	display:inline-block;
+	list-style-type:none;
+	margin:0px;
+	padding:7px;
+}
+#navbar li {
+	display:inline-block;
+}
+#header-top {
+	font-size:40px;
+	background-color:white;
+	margin:0px;
+}
+#header-top #word {
+	color:grey;
+}
+#header-top #stream {
+	color:lightblue;
+}
+#header-middle{
+	color:white;
+	background-color:blue;
+	padding:10px;
+}
+
+/**  Sidebar  **/
+
+#sidebar {
+	width:250px;
+	margin-right:0px;
+	display:inline-block;
+}
+#sidebar-top {
+	border-bottom: solid 1px;
+	display:inline-block;
+	margin-top:10px;
+}
+#sidebar-bottom {
+	display:inline-block;
+}
+
+#sidebar p {
+	font-size:15px;
+}
+
+/** Main Content  **/
+
+#maincontent {
+	width:500px;
+	display: inline-block;
+}
+#maincontent-header {
+}
+#maincontent-top {
+	border-top:solid 1px;
+	display: inline-block;
+}
+#maincontent-middle {
+	border: solid 5px;
+	border-color: lightblue;
+}
+#maincontent, #sidebar {
+	vertical-align: top;
+}
+
+/**  Buttons  **/
+
+#button0 {
+	font-size:10px;
+	font-weight:bold;
+	color:white;
+	height:25px;
+	width:60px;
+	background-color:lightblue;
+	border:none;
+	border-radius: 4px;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+#button1 {
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	height:35px;
+	width:250px;
+	background-color:lightblue;
+	border:none;
+	border-radius: 4px;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+#button2 {
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	height:35px;
+	width:250px;
+	background-color:orange;
+	border:none;
+	border-radius: 4px;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+/**  Classes  **/
+
+.blue {
+	color:blue;
+}
+.bold {
+	font-weight:bold;
+}
+.submit {
+	display: block;
+	margin: 0 auto;
+}
+
+/**  Misc.  **/
+
+#center {
+	text-align: center;
+}
+#red {
+	color:red;
+}
+#padding {
+	padding-top:5px;
+}

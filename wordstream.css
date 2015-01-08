@@ -1,5 +1,10 @@
 /** During the course of coding this page, I learned a lot about how to properly use divs and boxes. You'll note that parts of the page will be boxed incorrectly while others are more towards best practice. **/
 
+/*  css reset  */
+
+* {
+	font-family:sans-serif;
+}
 
 /**  Header **/
 
@@ -31,44 +36,203 @@
 	color:lightblue;
 }
 #header-middle{
+	font-size:27px;
 	color:white;
 	background-color:blue;
 	padding:10px;
+	margin-bottom:20px;
 }
 
 /**  Sidebar  **/
 
 #sidebar {
-	width:250px;
+	width:220px;
 	margin-right:0px;
 	display:inline-block;
 }
+
 #sidebar-top {
 	border-bottom: solid 1px;
 	display:inline-block;
-	margin-top:10px;
-}
-#sidebar-bottom {
-	display:inline-block;
+	margin-top:20px;
 }
 
-#sidebar p {
-	font-size:15px;
+#sidebar-top h3 {
+	margin-bottom:10px;
 }
+
+#sidebar-top #red {
+	color:red;
+	font-size:13px;
+	margin-top:16px;
+	margin-bottom:6px;
+}
+
+#sidebar-top p {
+	font-size:12px;
+	margin-top:5px;
+	margin-bottom:25px;
+}
+
+#sidebar-bottom {
+	display:inline-block;
+	background-image:url("/Users/matthewrutledge/Desktop/Coding Dojo/Week 1/WordStream/screen3-images/left_content_ad.png");
+	height:250px;
+	width:190px;
+	margin-top:19px;
+}
+
+#sidebar-bottom h4 {
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 13px;
+	width:170px;
+}
+
+#sidebar-bottom p {
+	margin-top: 12px;
+	margin-bottom: 0px;
+	margin-left: 13px;
+	font-size:13px;
+}
+
+#sidebar-bottom input {
+	width:162px;
+	height:25px;
+	margin-top: 12px;
+	margin-left: 13px;
+	color:white;
+	font-size:12px;
+	background-color:blue;
+	border-radius:5px;
+}
+
 
 /** Main Content  **/
 
 #maincontent {
-	width:500px;
 	display: inline-block;
+	margin-left:30px;
 }
+
 #maincontent-header {
+	width:710px;
+	height:65px;
 }
+
+#maincontent-header #home {
+	height:26px;
+	width:45px;
+	margin-bottom:30px;
+}
+
+#maincontent-header img, 
+#maincontent-header p, 
+#maincontent-header ul {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#maincontent-header #phone {
+	height:45px;
+	width:23px;
+	margin-bottom:30px;
+	margin-left:433px;
+}
+
+#maincontent-header p {
+	font-size:14px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+#maincontent-header ul {
+	list-style-type:none;
+	margin:0px;
+	margin-left:10px;
+	padding:0px;
+}
+
+.greystyle {
+	font-size:11px;
+	color:grey;
+}
+
+#bluestyle {
+	font-size:25px;
+	color:lightblue;
+}
+
 #maincontent-top {
+	width:710px;
 	border-top:solid 1px;
 	display: inline-block;
+	font-size: 13px;
 }
+
+#maincontent-top p {
+	margin:0px;
+	margin-bottom:20px;
+	font-size:13px;
+}
+
+#margincontent-top li {
+	font-size: 13px;
+}
+
+#maincontent-middle p {
+	margin:0px;
+	margin-bottom:20px;
+	font-size:14px;
+}
+
+#maincontent-middle1 {
+	width:0auto;
+}
+
+#maincontent-middle2 {
+	width:500px;
+}
+
+#maincontent-middle2 h3 {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+#maincontent-middle2 p {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+#maincontent-middle2 input {
+	color: white;
+	font-size:15px;
+	background-color:green;
+	border-radius:9px;
+	width:190px;
+	height:40px;
+	margin-bottom:5px;
+	margin-top:8px;
+}
+
+#maincontent-middle1, #maincontent-middle2 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#maincontent-bottom {
+	width:710px;
+}
+
+#maincontent-bottom p {
+	margin:0px;
+	margin-bottom:20px;
+	font-size:14px;
+}
+
 #maincontent-middle {
+	width:600px;
 	border: solid 5px;
 	border-color: lightblue;
 }
@@ -84,7 +248,7 @@
 	color:white;
 	height:25px;
 	width:60px;
-	background-color:lightblue;
+	background-color:blue;
 	border:none;
 	border-radius: 4px;
 	margin-top:2px;
@@ -95,8 +259,8 @@
 	font-weight:bold;
 	color:white;
 	height:35px;
-	width:250px;
-	background-color:lightblue;
+	width:220px;
+	background-color:blue;
 	border:none;
 	border-radius: 4px;
 	margin-top:2px;
@@ -107,7 +271,7 @@
 	font-weight:bold;
 	color:white;
 	height:35px;
-	width:250px;
+	width:220px;
 	background-color:orange;
 	border:none;
 	border-radius: 4px;
@@ -128,14 +292,13 @@
 	margin: 0 auto;
 }
 
+
 /**  Misc.  **/
 
 #center {
 	text-align: center;
 }
-#red {
-	color:red;
-}
+
 #padding {
 	padding-top:5px;
 }
